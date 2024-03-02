@@ -110,7 +110,7 @@ jQuery(document).ready(function($) {
 		$('.popup-wraper7').addClass('active');
 	});
 	$('.popup-closed').on('click', function () {
-		$('.popup-wraper7').removeClass('active');
+$('.popup-wraper7').removeClass('active');
 	});
 	
 // chat messenger remove unread
@@ -225,8 +225,7 @@ $('.audio-call, .video-call').on('click', function () {
 	  });
 		return false;
 	});
-	
-	$('.cancel-search').on('click', function () {
+$('.cancel-search').on('click', function () {
 	  $( ".searchees" ).fadeOut( "slow", function() {
 	  });
 		return false;
@@ -245,7 +244,7 @@ $('.user-img').on('click', function() {
 
 	
 //--- side message box	
-	$('.friendz-list > li, .chat-users > li, .drops-menu > li > a.show-mesg').on('click', function() {
+	$('.friends-chat > li, .chat-users > li, .drops-menu > li > a.show-mesg').on('click', function() {
 		$('.chat-box').addClass("show");
 		return false;
 	});	
@@ -330,7 +329,7 @@ $('.save-post, .bane, .get-link').on("click", function() {
 			$(this).addClass("active");
 			$(this).siblings('input').addClass("active");
 		});
-		$input.val(parseInt($input.val()) + 1);
+$input.val(parseInt($input.val()) + 1);
 		$input.change();
 		return false;
 	});
@@ -436,6 +435,24 @@ $('.save-post, .bane, .get-link').on("click", function() {
 		});
 		
 	}
+
+	if($(window).width() < 981) {
+		$(".sidebar").children().removeClass("stick-widget-right");
+	}
+
+	if ($.isFunction($.fn.stick_in_parent)) {
+		$('.stick-widget-right').stick_in_parent({
+			parent: '#page-contents',
+			offset_top: 60,
+		});
+
+		
+		$('.stick').stick_in_parent({
+		    parent: 'body',
+            offset_top: 0,
+		});
+		
+	}
 	
 /*--- topbar setting dropdown ---*/	
 	$(".we-page-setting").on("click", function() {
@@ -446,7 +463,7 @@ $('.save-post, .bane, .get-link').on("click", function() {
 $('#nightmode').on('change', function() {
     if ($(this).is(':checked')) {
         // Show popup window
-        $(".theme-layout").addClass('black');	
+$(".theme-layout").addClass('black');	
     }
 	else {
         $(".theme-layout").removeClass("black");
@@ -465,34 +482,34 @@ $('#nightmode').on('change', function() {
 		}).data({'min':0,'max':20,'step':1});
 	}	
 	
-if ($.isFunction($.fn.loadMoreResults)) {	
-	$('.loadMore').loadMoreResults({
-		displayedItems: 3,
-		showItems: 1,
-		button: {
-		  'class': 'btn-load-more',
-		  'text': 'Load More'
-		}
-	});	
+// if ($.isFunction($.fn.loadMoreResults)) {	
+// 	$('.loadMore').loadMoreResults({
+// 		displayedItems: 3,
+// 		showItems: 1,
+// 		button: {
+// 		  'class': 'btn-load-more',
+// 		  'text': 'Load More'
+// 		}
+// 	});	
 	
-	$('.load-more').loadMoreResults({
-		displayedItems: 8,
-		showItems: 1,
-		button: {
-		  'class': 'btn-load-more',
-		  'text': 'Load More'
-		}
-	});
+// 	$('.load-more').loadMoreResults({
+// 		displayedItems: 8,
+// 		showItems: 1,
+// 		button: {
+// 		  'class': 'btn-load-more',
+// 		  'text': 'Load More'
+// 		}
+// 	});
 	
-	$('.load-more4').loadMoreResults({
-		displayedItems: 8,
-		showItems: 1,
-		button: {
-		  'class': 'btn-load-more',
-		  'text': 'Load More'
-		}
-	});
-}
+// 	$('.load-more4').loadMoreResults({
+// 		displayedItems: 8,
+// 		showItems: 1,
+// 		button: {
+// 		  'class': 'btn-load-more',
+// 		  'text': 'Load More'
+// 		}
+// 	});
+// }
 	//===== owl carousel  =====//
 	if ($.isFunction($.fn.owlCarousel)) {
 		$('.sponsor-logo').owlCarousel({
@@ -633,7 +650,7 @@ if ($.isFunction($.fn.loadMoreResults)) {
 			smartSpeed: 1000,
 			autoplayHoverPause: true,
 			nav: true,
-			dots: false,
+dots: false,
 			responsiveClass:true,
 				responsive:{
 					0:{
@@ -826,7 +843,7 @@ if ($.isFunction($.fn.loadMoreResults)) {
 			smartSpeed: 1000,
 			autoplayHoverPause: true,
 			nav: true,
-			dots: false,
+dots: false,
 			center:false,
 			responsiveClass:true,
 				responsive:{
@@ -1003,7 +1020,7 @@ if ($.isFunction($.fn.loadMoreResults)) {
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         centerMode: true,
-        focusOnSelect: true
+focusOnSelect: true
     });
 	$('.slider-for-gold').slick({
 		slidesToShow: 1,
@@ -1144,7 +1161,7 @@ jQuery(".post-comt-box textarea").on("keydown", function(event) {
 	}
 }); 
 	
-//inbox page 	
+//inbox page
 //***** Message Star *****//  
     $('.message-list > li > span.star-this').on("click", function(){
     	$(this).toggleClass('starred');
@@ -1243,11 +1260,3 @@ jQuery(".post-comt-box textarea").on("keydown", function(event) {
 		}
 	};
 })();
-
-
-	
-
-
-
-
-
