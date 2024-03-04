@@ -1515,6 +1515,15 @@
 
 
 @media screen and (max-width: 640px) {
+
+	.left,
+	.right,
+	.profile-controls,
+	.wavy-wraper,
+	.widget-title{
+		display: none;
+	}
+
 	.profile-menu > li > a.active::after {
 	    border-bottom: 6px solid #fa6342;
 	    border-left: 7px solid transparent;
@@ -1561,6 +1570,15 @@
     
 }
 @media screen and (max-width: 568px) {
+
+	.left,
+	.right,
+	.profile-controls,
+	.wavy-wraper,
+	.widget-title{
+		display: none;
+	}
+
 	.row.merged20 > div {
 		padding: 0 15px;
 	}
@@ -1831,6 +1849,15 @@
 
 
 @media screen and (max-width: 480px) {
+
+	.left,
+	.right,
+	.profile-controls,
+	.wavy-wraper,
+	.widget-title{
+		display: none;
+	}
+
 	.sidebar .widget ul.recent-photos li > a, 
 	.sidebar .widget ul.recent-photos li > a img {
 	    display: inline-block;
