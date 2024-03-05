@@ -5180,15 +5180,14 @@ canvas {
     /* width: 100%; */
 }
 
-.friends-chat > ul > .author-thmb > img{
+.friends-chat > ul > li > .author-thmb > img{
     border-radius: 50%;
     margin-right: 10px;
 }
 
-
-.friends-chat > .hand-cursor:hover{
+#hand:hover{
+    color: #fa6342;
     cursor: pointer;
-    color: rgb(250, 99, 66);
 }
 
 .chat-friendz .chat-box {
