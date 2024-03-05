@@ -5185,6 +5185,11 @@ canvas {
     margin-right: 10px;
 }
 
+.friends-chat > .hand-cursor:hover{
+    cursor: pointer;
+    color: rgb(250, 99, 66);
+}
+
 .chat-friendz .chat-box {
     bottom: -43px;
 }
