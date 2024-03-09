@@ -8,7 +8,9 @@
     <meta name="keywords" content="" />
 	<title>Welcom To KinchaNa</title>
     <link rel="icon" href="images/Logo-kinchana.png" type="image/png" sizes="16x16"> 
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/toast-notification.css">
     <link rel="stylesheet" href="css/style.css">
@@ -34,9 +36,56 @@
 </div>
 <div class="theme-layout">
 	
-	<div class="postoverlay"></div>
-	
-	<div class="responsive-header">
+	<a href="newsfeed.html" ><img src="images/Logo-kinchana.png" alt=""></a>
+	<nav class="navbar navbar-inverse navbar navbar-expand-md "  style="background-color: #fa6342;">
+		<div class="container" id="head-res">
+			<div class="navbar-header" >
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: transparent; margin: 15px; border: none;">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-top: 10px;">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent; color:white">Menu </a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="newsfeed.html" style="color:white" ><i class="fa-solid fa-calendar"></i> News feed</a>
+							</li>
+							<li>
+								<a href="about.html" style="color:white" ><i class="fa-solid fa-user"></i> My Profile</a>
+							</li>
+							<li>
+								<a href="timeline-friends.html" style="color:white" ><i class="fa-solid fa-users"></i> Friends</a>
+							</li>
+							<li>
+								<a href="timeline-photos.html" style="color:white" ><i class="fa-regular fa-images"></i> Images</a>
+							</li>
+							<li>
+								<a href="chat-messenger.html" style="color:white" ><i class="fa-solid fa-message"></i> Messages</a>
+							</li>
+							<li>
+								<a href="notifications.html" style="color:white" ><i class="fa-solid fa-bell"></i> Notifications</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent; color:white">User Setting</a>
+						<ul class="dropdown-menu">
+							<li><a href="about.html" style="color:white"><i class="ti-user"></i> view profile</a></li>
+							<li><a href="timeline.html" style="color:white"><i class="ti-pencil-alt"></i>edit profile</a></li>
+							<li><a href="setting.html" style="color:white"><i class="ti-settings"></i>account setting</a></li>
+							<li><a href="logout.html" style="color:white"><i class="ti-power-off"></i>log out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	  </nav>
+	<!-- <div class="responsive-header ">
 		<div class="mh-head first Sticky">
 			<span class="mh-btns-left">
 				<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
@@ -53,7 +102,7 @@
 		</div>
 		
 		
-	</div><!-- responsive header -->
+	</div>responsive header -->
 	
 	<div class="topbar stick">
 		<div class="logo">
