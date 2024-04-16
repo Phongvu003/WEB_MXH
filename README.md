@@ -1,0 +1,3 @@
+- Hello. Thank you for coming to see my project
+- Contact me via nguyenphongvu003@gmail.com.
+- Have a nice day
